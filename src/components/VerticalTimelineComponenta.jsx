@@ -9,6 +9,7 @@ import creaxon from "../assets/creaxon.png";
 import drenLogo from "../assets/dren__logo.png";
 import school from "../assets/school-64.png";
 import lib from "../assets/library-64.png";
+import gdIcon from "../assets/website-design-32.png";
 
 const WorkIcon = ({ src }) => {
   return (
@@ -157,6 +158,47 @@ const VerticalTimelineComponenta = () => {
               UI and functions of the system, ensuring streamlined management of
               computer users&apos; access and a smooth workflow for library
               staff.
+            </li>
+          </ul>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            backgroundColor: "#1d1836",
+            color: "#fff",
+            padding: "20px",
+            borderRadius: "8px",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid #1d1836" }}
+          date="May 2023 - January 2024"
+          dateClassName="date-class"
+          iconStyle={{ backgroundColor: "#1d1836", color: "#fff" }}
+          icon={<WorkIcon src={gdIcon} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Freelance Graphic Designer
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Self-Employed</h4>
+
+          <ul
+            className="timeline-list"
+            style={{ paddingLeft: "20px", marginTop: "10px" }}
+          >
+            <li>
+              <strong>Graphic Design:</strong> Delivered creative design
+              solutions for various clients, including marketing materials,
+              logos, and brand identity.
+            </li>
+            <li>
+              <strong>Client Collaboration:</strong> Worked closely with clients
+              to understand their vision, translating it into effective designs
+              that support their branding goals.
+            </li>
+            <li>
+              <strong>Project Management:</strong> Handled the full design
+              process from concept to completion, ensuring timely and
+              high-quality project deliveries.
             </li>
           </ul>
         </VerticalTimelineElement>

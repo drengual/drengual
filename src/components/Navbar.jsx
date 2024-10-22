@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 bg-transparent from-black via-purple-900 to-black p-2 w-screen navbarr ${
+      className={`sticky top-0 bg-transparent from-black via-purple-900 to-black  w-screen navbarr ${
         isScrolled ? "scrolled" : ""
       }`}
     >
@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Links and button on the right, hidden in mobile/tablet */}
-        <div className="hidden md:flex space-x-6 items-center">
+        <div className="hidden md:flex space-x-6 m-3 items-center">
           <a
             href="#home"
             className="text-white neon-link p-4 hover:text-purple-300 transition duration-300"

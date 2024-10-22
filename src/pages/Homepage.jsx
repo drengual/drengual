@@ -23,7 +23,7 @@ const Homepage = () => {
             variants={slideInFromTop}
             className=" py-[8px]  opacity-[0.9]"
           >
-            <h1 className=" text-4xl md:text-6xl text-white font-bold tracking-wide">
+            <h1 className="text-4xl md:text-6xl text-white font-bold tracking-wide">
               Fullstack Developer
             </h1>
           </motion.div>
