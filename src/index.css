@@ -11,6 +11,29 @@ body {
   margin-bottom: 70px;
 }
 
+@media (max-width: 1024px) {
+  #home {
+    margin-top: 80px;
+  }
+  .blackhole {
+    right: -250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blackhole {
+    right: -200px;
+    top: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .blackhole {
+    right: -100px;
+    top: 100px;
+  }
+}
+
 /* Add these custom styles in your global CSS */
 .glow-effect {
   text-shadow: 0 0 15px rgba(128, 0, 255, 1), 0 0 30px rgba(128, 0, 255, 0.7),
@@ -261,9 +284,3 @@ body {
     @apply bg-background text-foreground;
   }
 } */
-
-@media (max-width: 1024px) {
-  #home {
-    margin-top: 80px;
-  }
-}

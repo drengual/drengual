@@ -2,12 +2,12 @@ import BlackholeVid from "../assets/blackhole.webm";
 
 const Blackhole = () => {
   return (
-    <div>
+    <div className="w-full z-[-2] relative overflow-x-clip">
       <video
         autoPlay
         muted
         loop
-        className="absolute top-[-180px] left-90 w-full h-full z-[-2] object-cover sm:h-[70vh] md:h-[50vh] lg:h-[100vh]"
+        className="absolute right-[-500px] top-[-90px] blackhole"
       >
         <source src={BlackholeVid} type="video/webm" />
       </video>
