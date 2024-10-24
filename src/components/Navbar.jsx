@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import drenlogo from "../assets/dren__logo.png";
-
 import resume from "../assets/Aldren_Bagual_Resume.pdf";
 
 const Navbar = () => {
@@ -30,53 +29,52 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 bg-transparent from-black via-purple-900 to-black  w-screen navbarr ${
+      className={`sticky top-0 bg-transparent w-full navbarr ${
         isScrolled ? "scrolled" : ""
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Title on the left */}
-
-        <div className="flex flex-row justify-center items-center text-white text-2xl font-bold tracking-widest glow-effect">
-          <img src={drenlogo} className="h-20 mx-4 mr-0" />
+      <div className="container mx-auto flex justify-between items-center p-4">
+        {/* Logo and Title */}
+        <div className="flex items-center text-white text-2xl font-bold tracking-widest">
+          <img src={drenlogo} className="h-16 w-16 mx-4" alt="Logo" />
           ALDREN BAGUAL
         </div>
 
-        {/* Links and button on the right, hidden in mobile/tablet */}
-        <div className="hidden md:flex space-x-6 m-3 items-center">
+        {/* Links and button for desktop */}
+        <div className="hidden md:flex space-x-6 items-center">
           <a
             href="#home"
-            className="text-white neon-link p-4 hover:text-purple-300 transition duration-300"
+            className="text-white hover:text-purple-300 transition duration-300"
           >
             Home
           </a>
           <a
             href="#about"
-            className="text-white neon-link hover:text-purple-300 transition duration-300"
+            className="text-white hover:text-purple-300 transition duration-300"
           >
             About
           </a>
           <a
             href="#projects"
-            className="text-white neon-link hover:text-purple-300 transition duration-300"
+            className="text-white hover:text-purple-300 transition duration-300"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="text-white neon-link hover:text-purple-300 transition duration-300"
+            className="text-white hover:text-purple-300 transition duration-300"
           >
             Contact
           </a>
           <button
             onClick={handleClick}
-            className="bg-purple-500 text-white px-4 py-2 rounded shadow-xl hover:bg-purple-600 transition duration-300 hover:scale-105 downloadButton"
+            className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition duration-300 hover:scale-105"
           >
             My Resume
           </button>
         </div>
 
-        {/* Hamburger menu icon for mobile/tablet */}
+        {/* Hamburger menu for mobile */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -102,39 +100,39 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu dropdown */}
+      {/* Dropdown menu for mobile */}
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } w-screen left-0 right-0  text-center `}
+        } bg-purple-800 text-center w-full md:hidden `}
       >
         <a
           href="#home"
-          className="block text-white p-2 neon-link hover:text-purple-300 transition duration-300"
+          className="block text-white p-4 hover:bg-purple-600 transition duration-300"
         >
           Home
         </a>
         <a
           href="#about"
-          className="block text-white p-2 neon-link hover:text-purple-300 transition duration-300"
+          className="block text-white p-4 hover:bg-purple-600 transition duration-300"
         >
           About
         </a>
         <a
-          href="#services"
-          className="block text-white p-2 neon-link hover:text-purple-300 transition duration-300"
+          href="#projects"
+          className="block text-white p-4 hover:bg-purple-600 transition duration-300"
         >
           Projects
         </a>
         <a
           href="#contact"
-          className="block text-white p-2 neon-link hover:text-purple-300 transition duration-300"
+          className="block text-white p-4 hover:bg-purple-600 transition duration-300"
         >
           Contact
         </a>
         <button
           onClick={handleClick}
-          className="block w-full bg-purple-500 text-white p-2 mt-2 rounded hover:bg-purple-600 transition duration-300 hover:scale-105"
+          className="block w-full bg-purple-500 text-white p-4 hover:bg-purple-600 transition duration-300"
         >
           My Resume
         </button>

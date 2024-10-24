@@ -15,7 +15,7 @@ const Homepage = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-col md:flex-row items-center justify-between px-10 md:px-20 mt-[50px] md:mt-0 w-full z-[5] bg-transparent gap-10"
+        className="flex flex-col md:flex-row items-center justify-between px-10 md:px-20 mt-[50px] md:mt-0 w-full z-[2] bg-transparent gap-10"
       >
         {/* Left Section with Text */}
         <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">

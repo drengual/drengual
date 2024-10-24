@@ -6,8 +6,12 @@
   scrollbar-width: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #"#030014";
+  background: "#030014";
   margin-bottom: 70px;
 }
 
@@ -45,17 +49,19 @@ body {
     0 0 30px rgba(128, 0, 255, 0.6);
 }
 
+.mobileDropdown {
+  background-color: #483285;
+}
 .navbarr {
   top: 0;
   left: 0;
   right: 0;
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-  height: 70px;
 }
 
 .navbarr.scrolled {
-  backdrop-filter: blur(10px);
-  z-index: 999;
+  backdrop-filter: blur(30px);
+  z-index: 10;
 }
 
 /*  */

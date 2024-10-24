@@ -8,10 +8,10 @@ import SolidBackground from "./components/SolidBackground";
 import StarryBackground from "./components/StarryBackground";
 import Blackhole from "./components/Blackhole";
 
-import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import Navbarr from "./components/Navbarr";
 // import Contact from "./pages/Contact";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
       <StarryBackground />
       <SolidBackground />
 
-      <Navbar />
+      <Navbarr />
       <main>
         <div className="flex flex-col gap-20">
           <section id="home">{<Homepage />}</section>

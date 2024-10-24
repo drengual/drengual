@@ -7,7 +7,7 @@ const Blackhole = () => {
         autoPlay
         muted
         loop
-        className="absolute right-[-500px] top-[-90px] blackhole"
+        className="absolute right-[-500px] top-[-90px] h-[400] blackhole"
       >
         <source src={BlackholeVid} type="video/webm" />
       </video>
